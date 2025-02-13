@@ -1,6 +1,6 @@
 
 import { useRef, useState, useEffect } from "react";
-import { Camera as CameraIcon, CameraRotate } from "lucide-react";
+import { Camera as CameraIcon, RotateCw } from "lucide-react";
 
 interface CameraProps {
   onCapture: (photo: string) => void;
@@ -86,7 +86,7 @@ const Camera = ({ onCapture }: CameraProps) => {
           onClick={toggleCamera}
           className="p-3 rounded-full bg-white/10 backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
         >
-          <CameraRotate className="w-6 h-6" />
+          <RotateCw className="w-6 h-6" />
         </button>
         
         <button
